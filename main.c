@@ -10,7 +10,7 @@
 void print_array(int * array) {
   int i=1;
   for (i=1;i<=10;i++) {
-      printf("\t%d: %u\n", i, array[i-1]);
+      printf("\t%d: %u\n", i, array[i-1]); //thank you Kiran for pointing out that my array was 1-indexed before!
   }
 }
 
