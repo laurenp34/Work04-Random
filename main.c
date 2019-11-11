@@ -23,7 +23,7 @@ int main() {
   //create first array
   int rand_array[10];
 
-  unsigned int rand;
+  int rand; 
 
   printf("Generating random numbers:\n");
 
