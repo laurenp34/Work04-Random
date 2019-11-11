@@ -10,7 +10,7 @@
 void print_array(int * array) {
   int i=1;
   for (i=1;i<=10;i++) {
-      printf("\t%d: %u\n", i, array[i]);
+      printf("\t%d: %u\n", i, array[i-1]);
   }
 }
 
@@ -93,7 +93,7 @@ int main() {
   // else printf("wrote to f2 successfully\n");
 
   printf("\nReading numbers from file...\n");
-  int * rand_array2[10];
+  int rand_array2[10];
   rand = read(f2, rand_array2, 10 * sizeof(int));
   if (rand != 10 * sizeof(int)) printf("error: only %d bytes read. Errno %d: %s\n", rand, errno, strerror(errno));
   else printf("read from randnos successfully\n");
